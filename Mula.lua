@@ -1832,9 +1832,9 @@
     Name = "Copy Link To See Latest Updates",
     Callback = function()
         if getgenv().AllClipboards then
-            getgenv().AllClipboards("https://github.com/LmaoItsCrazyBro/new_main/releases")
+            getgenv().AllClipboards("https://discord.gg/back2back")
         else
-            warn("https://github.com/LmaoItsCrazyBro/new_main/releases")
+            warn("https://discord.gg/back2back")
             getgenv().notify("Failure", "Posted the link in Developer Console, couldn't copy.", 6)
         end
     end,})
