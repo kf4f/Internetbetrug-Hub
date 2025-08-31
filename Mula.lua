@@ -1,6 +1,3 @@
- 
-    
-    -- Do you even fuckin need this? no you don't.
     --[[
         Animation Packages: Zombie, Catwalk Glam, Elder, Cartoony, Adidas,
         Adidas, Werewolf, Vampire, Astronaut,
@@ -47,9 +44,9 @@
     -- You get what I'm saying, now go fuck off and skid it.
 
     getgenv().SCRIPT_EXECUTED = getgenv().SCRIPT_EXECUTED or false
-    getgenv().All_TheWay_Loaded_FLAMES_HUB_GETGENV_VALUE = getgenv().All_TheWay_Loaded_FLAMES_HUB_GETGENV_VALUE or false
+    getgenv().All_TheWay_Loaded_Internetbetrug_HUB_GETGENV_VALUE = getgenv().All_TheWay_Loaded_Internetbetrug_HUB_GETGENV_VALUE or false
 
-    --[[if (getgenv().SCRIPT_EXECUTED == true) and (getgenv().All_TheWay_Loaded_FLAMES_HUB_GETGENV_VALUE == false) then
+    --[[if (getgenv().SCRIPT_EXECUTED == true) and (getgenv().All_TheWay_Loaded_Internetbetrug_HUB_GETGENV_VALUE == false) then
         if not getgenv().notify then
             getgenv().notify = function(title, content, duration)
                 local StarterGui = cloneref and cloneref(game:GetService("StarterGui")) or game:GetService("StarterGui")
@@ -62,9 +59,9 @@
             end
         end
 
-        getgenv().notify("CRITICAL:", "Flames Hub seems to have failed to load last time, re-running...", 5)
+        getgenv().notify("CRITICAL:", "Internetbetrug Hub seems to have failed to load last time, re-running...", 5)
         task.wait(0.2)
-        getgenv().notify("Alert:", "If Flames Hub does not fix itself, it's probably down!", 5)
+        getgenv().notify("Alert:", "If Internetbetrug Hub does not fix itself, it's probably down!", 5)
 
         task.wait(0.1)
         getgenv().SCRIPT_EXECUTED = false
@@ -81,7 +78,7 @@
     end
     -- [] -->> Make sure the script it's self does not get executed more then once, when executed, they will need to click the Re-Execute GUI button to restart the script. <<-- [] --
     if SCRIPT_EXECUTED or getgenv().SCRIPT_EXECUTED and not _G.SCRIPT_EXECUTED == true then  
-        return Notification:Notify("Heads Up!", "Flames Hub is already running!", 5)
+        return Notification:Notify("Heads Up!", "Internetbetrug Hub is already running!", 5)
     end
 
     pcall(function() getgenv().SCRIPT_EXECUTED = true end)
@@ -93,7 +90,7 @@
     elseif (enabled_vc == false and (not game.PlaceId == 6884319169)) or (not game.PlaceId == 15546218972) then
         Notification:Notify("Success!", "Connected.", 5)
     elseif enabled_vc == false and game.PlaceId == 6884319169 or game.PlaceId == 15546218972 then
-        return Notification:Notify("Sorry!", "Unable to load Flames Hub (No VC)", 5)
+        return Notification:Notify("Sorry!", "Unable to load Internetbetrug Hub (No VC)", 5)
     else
         Notification:Notify("Passed.", "Unknown error occurred.", 5) -- I actually have no idea when or why I added this, but I guess I kept it, so it might be necessary, I don't know man.
     end
@@ -148,10 +145,10 @@
             if color == Color3.fromRGB(255, 255, 255) then
                 local head = character:FindFirstChild("Head")
                 if not head then return warn("Head does not exist!") end
-                if head:FindFirstChild("FlamesHubBillboard") then return end
+                if head:FindFirstChild("InternetbetrugHubBillboard") then return end
 
                 local billboardGui = Instance.new("BillboardGui")
-                billboardGui.Name = "FlamesHubBillboard"
+                billboardGui.Name = "InternetbetrugHubBillboard"
                 billboardGui.Size = UDim2.new(10, 0, 1.5, 0)
                 billboardGui.MaxDistance = math.huge
                 billboardGui.LightInfluence = 0
@@ -183,10 +180,10 @@
                 textLabel.Parent = background
             else
                 local head = character:FindFirstChild("Head")
-                if head:FindFirstChild("FlamesHubBillboard") then return end
+                if head:FindFirstChild("InternetbetrugHubBillboard") then return end
 
                 local billboardGui = Instance.new("BillboardGui")
-                billboardGui.Name = "FlamesHubBillboard"
+                billboardGui.Name = "InternetbetrugHubBillboard"
                 billboardGui.Size = UDim2.new(10, 0, 1.5, 0)
                 billboardGui.MaxDistance = math.huge
                 billboardGui.LightInfluence = 0
@@ -229,9 +226,9 @@
     local function assign(player)
         -- If you want a Title, update it below, I and the people below don't really play MIC UP or any game anymore, so you can do what ever you want with it lol.
         if isWatchedPlayer(player.Name) then
-            make_title(player, "👑 Flames Hub | KING 👑", Color3.fromRGB(196, 40, 28), 0)
+            make_title(player, "👑 Internetbetrug Hub | KING 👑", Color3.fromRGB(196, 40, 28), 0)
         elseif beta_tester(player.Name) then
-            make_title(player, "✨ Flames Hub | BETA-PLAYER ✨", Color3.fromRGB(0, 0, 0), 0.1)
+            make_title(player, "✨ Internetbetrug Hub | BETA-PLAYER ✨", Color3.fromRGB(0, 0, 0), 0.1)
         end
     end
 
@@ -330,7 +327,7 @@
     getgenv().queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
     queueteleport = getgenv().queueteleport
 
-    local Flames_API = loadstring(game:HttpGet('https://raw.githubusercontent.com/EnterpriseExperience/MicUpSource/refs/heads/main/Flame_Hubs_API.lua'))()
+    local Internetbetrug_API = loadstring(game:HttpGet('https://raw.githubusercontent.com/EnterpriseExperience/MicUpSource/refs/heads/main/Flame_Hubs_API.lua'))()
     wait(0.1)
     print("14")
 
@@ -404,14 +401,14 @@
     task.wait(0.2)
     getgenv().Terrain = getgenv().Workspace.Terrain or getgenv().Workspace:FindFirstChild("Terrain")
     getgenv().Camera = getgenv().Workspace.Camera or getgenv().Workspace:FindFirstChild("Camera")
-    getgenv().LocalPlayer = Flames_API.LocalPlayer
+    getgenv().LocalPlayer = Internetbetrug_API.LocalPlayer
     getgenv().Backpack = getgenv().LocalPlayer:WaitForChild("Backpack") or getgenv().LocalPlayer:FindFirstChild("Backpack") or getgenv().LocalPlayer:FindFirstChildOfClass("Backpack") or getgenv().LocalPlayer:FindFirstChildWhichIsA("Backpack")
-    getgenv().PlayerGui = Flames_API.PlayerGui
+    getgenv().PlayerGui = Internetbetrug_API.PlayerGui
     getgenv().PlayerScripts = getgenv().LocalPlayer:WaitForChild("PlayerScripts") or getgenv().LocalPlayer:FindFirstChild("PlayerScripts")
-    getgenv().Character = Flames_API.Character
-    getgenv().HumanoidRootPart = Flames_API.HumanoidRootPart
-    getgenv().Humanoid = Flames_API.Humanoid
-    getgenv().Head = Flames_API.Head
+    getgenv().Character = Internetbetrug_API.Character
+    getgenv().HumanoidRootPart = Internetbetrug_API.HumanoidRootPart
+    getgenv().Humanoid = Internetbetrug_API.Humanoid
+    getgenv().Head = Internetbetrug_API.Head
     wait(0.2)
     local function Dynamic_Character_Updater(character)
         getgenv().Character = character or getgenv().LocalPlayer.Character
@@ -430,7 +427,7 @@
     task.wait(0.2)
     getgenv().LocalPlayer.CharacterAdded:Connect(function(newCharacter)
         task.wait(0.5)
-        warn("[Flames Hub]: New Character added, pre-fetching and initializing.")
+        warn("[Internetbetrug Hub]: New Character added, pre-fetching and initializing.")
         Dynamic_Character_Updater(newCharacter)
         getgenv().LocalPlayer.CharacterAdded:Wait()
         task.wait(0.5)
@@ -507,11 +504,11 @@
     else
         getgenv().checkNecessaryFunctions = function(function_checked)
             if function_checked then
-                print("[Flames_Hub::OUTPUT_HOOKED]: "..tostring(function_checked).." ||| Success ✅")
+                print("[Internetbetrug_Hub::OUTPUT_HOOKED]: "..tostring(function_checked).." ||| Success ✅")
             elseif not function_checked or function_checked == nil then
-                warn("[Flames_Hub::OUTPUT_HOOKED]: "..tostring(function_checked).." ||| Failure ❌")
+                warn("[Internetbetrug_Hub::OUTPUT_HOOKED]: "..tostring(function_checked).." ||| Failure ❌")
             else
-                warn("[Flames_Hub::OUTPUT_HOOKED]: "..tostring(function_checked).." ||| Unknown ❓")
+                warn("[Internetbetrug_Hub::OUTPUT_HOOKED]: "..tostring(function_checked).." ||| Unknown ❓")
             end
         end
 
@@ -870,11 +867,11 @@
         delfile(file_2)
     end
     wait(0.2)
-    local image_id_flames = 93594537601787
-    getgenv().image_flames_hub = image_id_flames
-    local Flames_Module = loadstring(game:HttpGet('https://raw.githubusercontent.com/EnterpriseExperience/MicUpSource/refs/heads/main/Flame_Hubs_API.lua'))()
+    local image_id_Internetbetrug = 93594537601787
+    getgenv().image_Internetbetrug_hub = image_id_Internetbetrug
+    local Internetbetrug_Module = loadstring(game:HttpGet('https://raw.githubusercontent.com/EnterpriseExperience/MicUpSource/refs/heads/main/Flame_Hubs_API.lua'))()
     wait()
-    getgenv().Module_For_Flames_Hub = Flames_Module
+    getgenv().Module_For_Internetbetrug_Hub = Internetbetrug_Module
 
     getgenv().AllClipboards("https://github.com/EnterpriseExperience/MicUpSource/releases <-- make sure to stay updated.")
     wait()
@@ -882,12 +879,12 @@
     wait(0.2)
     if executor_Name == "Solara" or executor_Name == "Sonar" or executor_Name == "Xeno" or executor_Name == "Macsploit" then
         Window = Rayfield:CreateWindow({
-            Name = "InternetBetrug Hub | "..tostring(Script_Version).." | "..tostring(executor_Name),
+            Name = "Internetbetrug Hub | "..tostring(Script_Version).." | "..tostring(executor_Name),
             LoadingTitle = "Enjoy, "..tostring(getgenv().LocalPlayer),
             LoadingSubtitle = "Internetbetrug Hub | Wassup!",
             ConfigurationSaving = {
                 Enabled = false,
-                FolderName = "ConfigurationFlamesHub",
+                FolderName = "ConfigurationInternetbetrugHub",
                 FileName = "Internetbetrug hub"
             },
             Discord = {
@@ -913,7 +910,7 @@
             LoadingSubtitle = "Internetbetrug Hub | Wassup!",
             ConfigurationSaving = {
                 Enabled = false,
-                FolderName = "ConfigurationFlamesHub",
+                FolderName = "ConfigurationInternetbetrugHub",
                 FileName = "Internetbetrug Hub"
             },
             Discord = {
@@ -937,7 +934,7 @@
     --getgenv().notify("Heads Up!", "We have now defaulted to Infinite Premium [mine].", 7)
     wait(0.1)
     -- [] -->> Initialize our Tabs and Sections <<-- [] --
-    local Tab1 = Window:CreateTab("🏡 Home 🏡", getgenv().image_flames_hub)
+    local Tab1 = Window:CreateTab("🏡 Home 🏡", getgenv().image_Internetbetrug_hub)
     local Section1 = Tab1:CreateSection("||| 🏡 Home 🏡 Section |||")
 
     local Tab21
@@ -948,24 +945,24 @@
     local Section11
     wait(0.2)
     if game.PlaceId == 6884319169 or game.PlaceId == 15546218972 then
-        Tab11 = Window:CreateTab("🚪 Booths 🚪", getgenv().image_flames_hub)
+        Tab11 = Window:CreateTab("🚪 Booths 🚪", getgenv().image_Internetbetrug_hub)
         Section11 = Tab11:CreateSection("||| 🚪 Booths 🚪 Section |||")
     else
         Tab11 = nil
         Section11 = nil
     end
     wait(0.2)
-    local Tab2 = Window:CreateTab("🧍 LocalPlayer 🧍", getgenv().image_flames_hub)
+    local Tab2 = Window:CreateTab("🧍 LocalPlayer 🧍", getgenv().image_Internetbetrug_hub)
     local Section2 = Tab2:CreateSection("||| 🧍 LocalPlayer 🧍 Section |||")
 
-    local Tab13 = Window:CreateTab("👩‍👩‍👧‍👦 Players 👩‍👩‍👧‍👦", getgenv().image_flames_hub)
+    local Tab13 = Window:CreateTab("👩‍👩‍👧‍👦 Players 👩‍👩‍👧‍👦", getgenv().image_Internetbetrug_hub)
     local Section13 = Tab13:CreateSection("||| 👩‍👩‍ Players 👩‍👩‍ Section |||")
 
-    local Tab22 = Window:CreateTab("📏 Baseplate 📏", getgenv().image_flames_hub)
+    local Tab22 = Window:CreateTab("📏 Baseplate 📏", getgenv().image_Internetbetrug_hub)
     local Section22 = Tab22:CreateSection("||| 📏‍ Baseplate 📏‍ Section |||")
 
     if game.PlaceId == 6884319169 or game.PlaceId == 15546218972 then
-        Tab10 = Window:CreateTab("🦿 Teleports 🦿", getgenv().image_flames_hub)
+        Tab10 = Window:CreateTab("🦿 Teleports 🦿", getgenv().image_Internetbetrug_hub)
         Section10 = Tab10:CreateSection("||| 🦿 Teleports 🦿 Section |||")
     else
         Tab10 = nil
@@ -973,48 +970,48 @@
         warn("Not loading Teleports, not 'MIC UP' or 'MIC UP 17+'.")
     end
     wait(0.2)
-    Tab18 = Window:CreateTab("🗺️ Map 🗺️", getgenv().image_flames_hub)
+    Tab18 = Window:CreateTab("🗺️ Map 🗺️", getgenv().image_Internetbetrug_hub)
     Section18 = Tab18:CreateSection("||| 🗺️ Map 🗺️ Section |||")
 
     if getgenv().LocalPlayer:FindFirstChildOfClass("AudioDeviceInput") then
-        Tab21 = Window:CreateTab("🎤 VC 🎤", getgenv().image_flames_hub)
+        Tab21 = Window:CreateTab("🎤 VC 🎤", getgenv().image_Internetbetrug_hub)
         Section21 = Tab21:CreateSection("||| 🎤 VC 🎤 Section |||")
     else
-        Tab21 = Window:CreateTab("🎙️ VoiceChat 🎙️", getgenv().image_flames_hub)
+        Tab21 = Window:CreateTab("🎙️ VoiceChat 🎙️", getgenv().image_Internetbetrug_hub)
         Section21 = Tab21:CreateSection("||| 🎙️ VoiceChat 🎙️ Section |||")
     end
     wait()
-    Tab4 = Window:CreateTab("💬 Chat 💬", getgenv().image_flames_hub)
+    Tab4 = Window:CreateTab("💬 Chat 💬", getgenv().image_Internetbetrug_hub)
     Section4 = Tab4:CreateSection("||| 💬 Chat 💬 Section |||")
 
-    Tab5 = Window:CreateTab("🤖 Exploits 🤖", getgenv().image_flames_hub)
+    Tab5 = Window:CreateTab("🤖 Exploits 🤖", getgenv().image_Internetbetrug_hub)
     Section5 = Tab5:CreateSection("||| 🤖 Exploits 🤖 Section |||")
 
-    Tab16 = Window:CreateTab("🌎 Universal 🌎", getgenv().image_flames_hub)
+    Tab16 = Window:CreateTab("🌎 Universal 🌎", getgenv().image_Internetbetrug_hub)
     Section16 = Tab16:CreateSection("||| 🌎 Global 🌎 Section |||")
 
-    local Tab7 = Window:CreateTab("❓ Whitelist ❓", getgenv().image_flames_hub)
+    local Tab7 = Window:CreateTab("❓ Whitelist ❓", getgenv().image_Internetbetrug_hub)
     local Section7 = Tab7:CreateSection("||| ❓ Whitelist ❓ Section |||")
 
-    Tab17 = Window:CreateTab("🕺 Animations 🕺", getgenv().image_flames_hub)
+    Tab17 = Window:CreateTab("🕺 Animations 🕺", getgenv().image_Internetbetrug_hub)
     Section17 = Tab17:CreateSection("||| 🕺 Animations 🕺 Section |||")
 
-    Tab9 = Window:CreateTab("💡 Lighting 💡", getgenv().image_flames_hub)
+    Tab9 = Window:CreateTab("💡 Lighting 💡", getgenv().image_Internetbetrug_hub)
     Section9 = Tab9:CreateSection("||| 💡 Lighting 💡 Section |||")
 
-    Tab12 = Window:CreateTab("🏃‍♂️ Emotes 🏃‍♂️", getgenv().image_flames_hub)
+    Tab12 = Window:CreateTab("🏃‍♂️ Emotes 🏃‍♂️", getgenv().image_Internetbetrug_hub)
     Section12 = Tab12:CreateSection("||| 🏃‍♂️ Emotes 🏃‍♂️ Section |||")
 
-    local Tab19 = Window:CreateTab("👁️ Visuals 👁️", getgenv().image_flames_hub)
+    local Tab19 = Window:CreateTab("👁️ Visuals 👁️", getgenv().image_Internetbetrug_hub)
     local Section19 = Tab19:CreateSection("||| 👁️ Visuals 👁️ Section |||")
     wait()
-    Tab14 = Window:CreateTab("💫 CopyAnimation 💫", getgenv().image_flames_hub)
+    Tab14 = Window:CreateTab("💫 CopyAnimation 💫", getgenv().image_Internetbetrug_hub)
     Section14 = Tab14:CreateSection("||| 💫 Copy Animation 💫 Section |||")
 
-    Tab15 = Window:CreateTab("📝 Settings 📝", getgenv().image_flames_hub)
+    Tab15 = Window:CreateTab("📝 Settings 📝", getgenv().image_Internetbetrug_hub)
     Section15 = Tab15:CreateSection("||| 📝 Settings 📝 Section |||")
 
-    Tab20 = Window:CreateTab("📜 Config 📜", getgenv().image_flames_hub)
+    Tab20 = Window:CreateTab("📜 Config 📜", getgenv().image_Internetbetrug_hub)
     Section20 = Tab20:CreateSection("||| 📜 Configuration 📜 Section |||")
     wait(0.2)
     if getgenv().LocalPlayer.Name == "L0CKED_1N1" or getgenv().LocalPlayer.Name == "CHEATING_B0SS" then
@@ -1603,8 +1600,8 @@
         end
     end
     wait()
-    -- AntiLag modified exclusively by Flames Hub
-    if not getgenv().AbsoluteAntiLagFlamesHub then
+    -- AntiLag modified exclusively by Internetbetrug Hub
+    if not getgenv().AbsoluteAntiLagInternetbetrugHub then
         local Terrain = getgenv().Terrain
         local Lighting = getgenv().Lighting
         local Workspace = getgenv().Workspace
@@ -1634,9 +1631,9 @@
             optimize(child)
         end
         wait(0.1)
-        getgenv().AbsoluteAntiLagFlamesHub = true
+        getgenv().AbsoluteAntiLagInternetbetrugHub = true
     else
-        warn("Anti-Lag already loaded for Flames Hub!")
+        warn("Anti-Lag already loaded for Internetbetrug Hub!")
     end
     wait()
     local safeEmotes = {
@@ -3871,7 +3868,7 @@
     Flag = "SendNotifMessage",
     Callback = function(Notif_Sender)
         getgenv().GuiService:SendNotification({
-            Title = tostring("Flames Hub:"),
+            Title = tostring("Internetbetrug Hub:"),
             Text = tostring(Notif_Sender),
         })
     end,})
@@ -5623,9 +5620,9 @@
 
     if game.PlaceId == 6884319169 or game.PlaceId == 15546218972 then
         getgenv().Owner_Animations = Tab2:CreateToggle({
-        Name = "Flames Animations (Applies every respawn)",
+        Name = "Internetbetrug Animations (Applies every respawn)",
         CurrentValue = false,
-        Flag = "LoadFlamesOwnerAnims",
+        Flag = "LoadInternetbetrugOwnerAnims",
         Callback = function(apply_to_respawn_anims)
             if apply_to_respawn_anims then
                 if getgenv().Character:FindFirstChildWhichIsA("Humanoid").RigType == Enum.HumanoidRigType.R6 then 
@@ -6112,7 +6109,7 @@
     end
 
     getgenv().WhitelistOtherScriptUser = Tab7:CreateInput({
-    Name = "Whitelist Script/Flames User",
+    Name = "Whitelist Script/Internetbetrug User",
     CurrentValue = "User",
     PlaceholderText = "User Here",
     RemoveTextAfterFocusLost = true,
@@ -7913,13 +7910,13 @@
                 end
 
                 local write_words = {
-                    "Flames Hub [WINNING]!",
+                    "Internetbetrug Hub [WINNING]!",
                     "Join: VJh3kkYzBn",
-                    "Flames Hub [WE UP]!",
-                    "Flames Hub V6, POWERFUL!",
+                    "Internetbetrug Hub [WE UP]!",
+                    "Internetbetrug Hub V6, POWERFUL!",
                     "Powering Automation | Scripting",
-                    "Flames Hub | WE OP!",
-                    "Flames Hub | WE SIGMA",
+                    "Internetbetrug Hub | WE OP!",
+                    "Internetbetrug Hub | WE SIGMA",
                     "BEST FREE SCRIPT RN!",
                     "WE ARE TAKING OVER, JOIN US!",
                     "IF YOU DONT JOIN, YOUR NOT SIGMA"
@@ -11076,7 +11073,7 @@
     wait(0.1)
     if game.PlaceId == 6884319169 or game.PlaceId == 15546218972 then
         getgenv().TeleportToCrossroadsMap = Tab10:CreateButton({
-        Name = "TP To Crossroads Map (Only for Flames Hub users)",
+        Name = "TP To Crossroads Map (Only for Internetbetrug Hub users)",
         Callback = function()
             if getgenv().Character:FindFirstChildWhichIsA("Humanoid").Sit or getgenv().Character:FindFirstChildWhichIsA("Humanoid").Sit == true then
                 getgenv().Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(3)
@@ -11088,7 +11085,7 @@
         end,})
 
         getgenv().TeleportToModernHouseMap = Tab10:CreateButton({
-        Name = "TP To Modern House Map (Only for Flames Hub users)",
+        Name = "TP To Modern House Map (Only for Internetbetrug Hub users)",
         Callback = function()
             if getgenv().Character:FindFirstChildWhichIsA("Humanoid").Sit or getgenv().Character:FindFirstChildWhichIsA("Humanoid").Sit == true then
                 getgenv().Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(3)
@@ -11100,7 +11097,7 @@
         end,})
 
         --[[getgenv().Prison_Life_Map_TP = Tab10:CreateButton({
-        Name = "TP To Prison Life (Only for Flames Hub users)",
+        Name = "TP To Prison Life (Only for Internetbetrug Hub users)",
         Callback = function()
             local Workspace = getgenv().Workspace
             local Prison_Life_Map = Workspace:FindFirstChild("Prison_Life")
@@ -11128,7 +11125,7 @@
         end,})
 
         getgenv().Teleport_To_VIBE_NYC_Map = Tab10:CreateButton({
-        Name = "TP To VIBE NYC Map (Only for Flames Hub users)",
+        Name = "TP To VIBE NYC Map (Only for Internetbetrug Hub users)",
         Callback = function()
             if getgenv().Character:FindFirstChildWhichIsA("Humanoid").Sit or getgenv().Character:FindFirstChildWhichIsA("Humanoid").Sit == true then
                 getgenv().Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(3)
@@ -15041,7 +15038,7 @@
 
     getgenv().textForFullyLoadedMessage = Tab20:CreateInput({
     Name = "Fully Loaded Message",
-    CurrentValue = readConfigValue("Fully_Loaded_Message") or "Flames Hub - Winning!",
+    CurrentValue = readConfigValue("Fully_Loaded_Message") or "Internetbetrug Hub - Winning!",
     PlaceholderText = "Text Here",
     RemoveTextAfterFocusLost = true,
     Flag = "toStringForFullLoadedMsg",
@@ -15104,7 +15101,7 @@
     end,})
 
     getgenv().sysBroken_Other_Mod = Tab20:CreateToggle({
-    Name = "Flames System Broken (Auto-Load)",
+    Name = "Internetbetrugs System Broken (Auto-Load)",
     CurrentValue = readConfigValue("System_Broken") or false,
     Flag = "SystemBrokenBeingLoaded",
     Callback = function(hasEnabledSysBroken)
@@ -15294,7 +15291,7 @@
         end
     end
     --[[wait(0.2)
-    getgenv().Easies_Configuration["Fully_Loaded_Message"] = "Flames Hub - On TOP!"
+    getgenv().Easies_Configuration["Fully_Loaded_Message"] = "Internetbetrug Hub - On TOP!"
     wait(0.3)
     if getgenv().fully_loaded_message_script then
         warn("Already loaded fully loaded message.")
@@ -15314,19 +15311,19 @@
     })
     wait(0.2)
     if getgenv().output_already_viewed then
-        warn("Already viewed and injected 'Flames Hub'")
+        warn("Already viewed and injected 'Internetbetrug Hub'")
     else
         if game.PlaceId == 6884319169 or game.PlaceId == 15546218972 then
             GuiService:SendNotification({
                 Title = "Please wait...",
-                Text = "Attaching Flames Hub into MIC UP 🔊...",
+                Text = "Attaching Internetbetrug Hub into MIC UP 🔊...",
             })
             wait(0.3)
             if not getgenv().Has_Died_Func then
                 if setfpscap then
                     setfpscap(0)
                     wait(0.5)
-                    print("Injecting Flames Hub...")
+                    print("Injecting Internetbetrug Hub...")
                     wait(0.5)
                     getgenv().emoting_actions(0)
                     wait(0.2)
@@ -15360,7 +15357,7 @@
             })
             wait(0.8)
             if setfpscap then
-                print("Injecting Flames Hub...")
+                print("Injecting Internetbetrug Hub...")
                 wait(1)
                 getgenv().emoting_actions(0)
                 getgenv().emoting_actions(0)
@@ -15371,12 +15368,12 @@
                 wait(0.6)
                 setfpscap(999)
                 wait(0.2)
-                print("Done injecting Flames Hub.")
+                print("Done injecting Internetbetrug Hub.")
             end
         end
     end
     wait(0.1)
-    getgenv().All_TheWay_Loaded_FLAMES_HUB_GETGENV_VALUE = true
+    getgenv().All_TheWay_Loaded_Internetbetrug_HUB_GETGENV_VALUE = true
     wait(0.4)
     if getgenv().seen_output_zeh then
         warn("Already seen notification output.")
